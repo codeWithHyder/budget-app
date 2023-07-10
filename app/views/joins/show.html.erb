@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @join %>
+
+<div>
+  <%= link_to "Edit this join", edit_join_path(@join) %> |
+  <%= link_to "Back to joins", joins_path %>
+
+  <%= button_to "Destroy this join", @join, method: :delete %>
+</div>
