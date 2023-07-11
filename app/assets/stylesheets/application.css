@@ -11,7 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require_self
+
  */
 
 /*
@@ -29,30 +29,72 @@
  *= require_tree .
  *= require_self
  */
+@import 'font-awesome';
 
-/*
- *= require font-awesome
- */
-
+/* = require font-awesome */
 /* stylelint-disable */
 /* @font-face {
-    font-family: 'Proxima Nova';
-    src: url ('proxima-nova-light-webfont.eot');
-    src: url ('proxima-nova-light-webfont.eot?#iefix') format ('embedded-opentype'),
-        url ('proxima-nova-light-webfont.woff2') format ('woff2'),
-        url ('proxima-nova-light-webfont.woff') format ('woff'),
-        url ('proxima-nova-light-webfont.ttf') format ('truetype'),
-        url ('proxima-nova-light-webfont.svg#proxima_nova_light') format ('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Proxima Nova';
+  src: url ('proxima-nova-light-webfont.eot');
+  src:
+    url ('proxima-nova-light-webfont.eot?#iefix') format ('embedded-opentype'),
+    url ('proxima-nova-light-webfont.woff2') format ('woff2'),
+    url ('proxima-nova-light-webfont.woff') format ('woff'),
+    url ('proxima-nova-light-webfont.ttf') format ('truetype'),
+    url ('proxima-nova-light-webfont.svg#proxima_nova_light') format ('svg');
+  font-weight: normal;
+  font-style: normal;
 } */
-
-/* stylelint-enable */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.head {
+  background-color: #3778c2;
+}
+
+.links-cat {
+  display: flex;
+  flex-direction: row;
+  column-gap: normal;
+}
+
+.cat-name {
+  color: crimson;
+}
+
+.list-cat {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.list-cat li {
+  display: block;
+  background-color: rgb(112, 49, 49);
+  font-size: larger;
+  height: 3rem;
+  width: 100%;
+  color: whitesmoke;
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+}
+
+.explist {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: #a4ce87;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 1rem;
 }
 
 :root {
@@ -66,7 +108,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: var(--light);
+  background-color: rgb(223, 211, 183);
 }
 
 header {
@@ -108,16 +150,16 @@ a {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.5rem;
-  background: var(--main);
   border: none;
   color: var(--light);
-  border-radius: 2rem;
+  border-radius: none;
   cursor: pointer;
 }
 
 a:hover {
   background: var(--second);
   color: #f7f8fd;
+  border-radius: 0.4rem;
 }
 
 .category-name a {
