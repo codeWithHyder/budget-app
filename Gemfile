@@ -9,6 +9,9 @@ gem 'rails', '~> 7.0.6'
 # rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'cancancan'
+
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
@@ -36,6 +39,7 @@ gem 'jbuilder'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 # devise
+gem 'devise'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
