@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   before_action :set_user, only: %i[show edit update destroy]
 
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation)
+  end
+
   # GET /users or /users.json
   def index
     @users = User.all
