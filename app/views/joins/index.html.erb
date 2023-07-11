@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Joins</h1>
+
+<div id="joins">
+  <% @joins.each do |join| %>
+    <%= render join %>
+    <p>
+      <%= link_to "Show this join", join %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New join", new_join_path %>
