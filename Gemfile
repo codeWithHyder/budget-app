@@ -42,6 +42,10 @@ gem 'devise'
 
 gem 'font-awesome-sass'
 
+gem 'rspec-rails'
+
+gem 'faker'
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
@@ -66,7 +70,12 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
+  group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'factory_bot_rails', '~> 6.2'
+end
+
+# Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
