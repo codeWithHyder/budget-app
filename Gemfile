@@ -71,11 +71,11 @@ group :development do
   gem 'web-console'
 
   group :test do
-  gem 'shoulda-matchers', '~> 5.0'
-  gem 'factory_bot_rails', '~> 6.2'
-end
+    gem 'factory_bot_rails', '~> 6.2'
+    gem 'shoulda-matchers', '~> 5.0'
+  end
 
-# Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
+  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
