@@ -61,8 +61,9 @@ This is a budget planner app that allows users to add their expenses categories 
   </ul>
 </details>
 
-## live demo
-will be added soon
+## Live Demo (if available) 💻
+## [live demo Link](https://www.loom.com/share/68c05240c1ca47edad623983ab189847)
+## [Project Deployment]()
 
 <!-- Features -->
 
